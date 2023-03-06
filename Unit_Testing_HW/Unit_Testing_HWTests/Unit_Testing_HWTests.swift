@@ -33,15 +33,32 @@ final class Unit_Testing_HWTests: XCTestCase {
         XCTAssert(sut.intResult == 144, "the result has to be equal to 144" )
     }
     
-    func testDivisionByZero() {
-        let nullparameter: Double = 0
-        sut.division(x: 4, y: nullparameter)
-        XCTAssertEqual(0, nullparameter, "u can't divide by zer0 ")
-    }
-    func testDivisin() {
-        sut.division(x: 3.14, y: 2)
-        XCTAssert(sut.doubleResult == 1.57, "the result has to be equal to 1.57")
+    
+    func testDivisionbyZeroWithThrows() {
+        XCTAssertThrowsError(try sut.division(x: 4, y: 0), "u has to test the option with error")
     }
     
+    func testDivisionNothrow() {
+        XCTAssertNoThrow(try sut.division(x: 144, y: 36), "there are should be no erros")
+    }
+    
+    func testDivision() {
+        do {
+            try sut.division(x: 144, y: 36)
+        } catch {
+            print("smth goes wrong")
+        }
+        XCTAssert(sut.doubleResult == 4, "result should be equals to 4")
+    }
+//    func testDivisionByZero() {
+//        let nullparameter: Double = 0
+//        try sut.division(x: 4, y: nullparameter)
+//        XCTAssertEqual(0, nullparameter, "u can't divide by zer0 ")
+//    }
+//    func testDivisin() {
+//        sut.division(x: 3.14, y: 2)
+//        XCTAssert(sut.doubleResult == 1.57, "the result has to be equal to 1.57")
+//    }
+
 
 }

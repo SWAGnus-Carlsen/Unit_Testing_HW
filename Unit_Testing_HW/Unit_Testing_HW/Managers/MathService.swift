@@ -22,10 +22,9 @@ class MathService {
         intResult = x * y
     }
     
-    func division(x: Double, y: Double) {
+    func division(x: Double, y: Double) throws {
         guard y != 0 else {
-            print("u can't divide by zero")
-            return
+            throw divisionErrors.divisionByZeroError(value: "u can't divide by zer0")
         }
         doubleResult = x / y
     }
