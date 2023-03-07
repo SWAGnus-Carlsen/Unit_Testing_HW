@@ -16,6 +16,8 @@
 		125C166C29B540E20026143B /* Unit_Testing_HWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125C166B29B540E20026143B /* Unit_Testing_HWTests.swift */; };
 		125C167629B540E20026143B /* Unit_Testing_HWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125C167529B540E20026143B /* Unit_Testing_HWUITests.swift */; };
 		125C167829B540E20026143B /* Unit_Testing_HWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125C167729B540E20026143B /* Unit_Testing_HWUITestsLaunchTests.swift */; };
+		125C168629B600110026143B /* MathService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125C168529B600110026143B /* MathService.swift */; };
+		12CAF84629B60F930020C753 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CAF84529B60F930020C753 /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		125C167129B540E20026143B /* Unit_Testing_HWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Unit_Testing_HWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125C167529B540E20026143B /* Unit_Testing_HWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_Testing_HWUITests.swift; sourceTree = "<group>"; };
 		125C167729B540E20026143B /* Unit_Testing_HWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_Testing_HWUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		125C168529B600110026143B /* MathService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathService.swift; sourceTree = "<group>"; };
+		12CAF84529B60F930020C753 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		125C165329B540DB0026143B /* Unit_Testing_HW */ = {
 			isa = PBXGroup;
 			children = (
+				12CAF84429B60F760020C753 /* Enums */,
+				125C168429B5FFEA0026143B /* Managers */,
 				125C165429B540DB0026143B /* AppDelegate.swift */,
 				125C165629B540DB0026143B /* SceneDelegate.swift */,
 				125C165829B540DB0026143B /* ViewController.swift */,
@@ -125,6 +131,22 @@
 				125C167729B540E20026143B /* Unit_Testing_HWUITestsLaunchTests.swift */,
 			);
 			path = Unit_Testing_HWUITests;
+			sourceTree = "<group>";
+		};
+		125C168429B5FFEA0026143B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				125C168529B600110026143B /* MathService.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		12CAF84429B60F760020C753 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				12CAF84529B60F930020C753 /* Error.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +283,8 @@
 				125C165929B540DB0026143B /* ViewController.swift in Sources */,
 				125C165529B540DB0026143B /* AppDelegate.swift in Sources */,
 				125C165729B540DB0026143B /* SceneDelegate.swift in Sources */,
+				12CAF84629B60F930020C753 /* Error.swift in Sources */,
+				125C168629B600110026143B /* MathService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
